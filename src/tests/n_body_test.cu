@@ -1,8 +1,9 @@
-#include "n_body_test.cuh"
-#include "../types/body.cuh"
-#include "../types/tensor.cuh"
-#include "../types/vector3.cuh"
-#include "../kernels/n_body.cuh"
+#include <tests/n_body_test.cuh>
+#include <types/body.cuh>
+#include <types/tensor.cuh>
+#include <types/vector3.cuh>
+#include <kernels/n_body.cuh>
+#include <util.cuh>
 
 #include <iostream>
 #include <vector>

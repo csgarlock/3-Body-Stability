@@ -1,9 +1,9 @@
 #ifndef N_BODY_H_INCLUDED
 #define N_BODY_H_INCLUDED
 
-#include "../util.cuh"
-#include "../types/body.cuh"
-#include "../types/vector3.cuh"
+#include <util.cuh>
+#include <types/body.cuh>
+#include <types/vector3.cuh>
 
 template <int BodyCount = 3>
 __device__ __forceinline__ Vector3 acceleration(int idx, Vector3 x, const Body bodies[BodyCount]) {

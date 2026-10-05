@@ -3,8 +3,8 @@
 # Compiler settings
 NVCC        := nvcc
 CXX         := g++
-CXXFLAGS    := -O3 -std=c++20 -MMD -MP
-NVCCFLAGS   := -O3 -std=c++20 -arch=sm_89 -MMD -MP
+CXXFLAGS    := -O3 -std=c++20 -MMD -MP -Isrc
+NVCCFLAGS   := -O3 -std=c++20 -arch=sm_89 -MMD -MP -Isrc
 LDFLAGS     := -lcudart
 
 # Debug configuration

@@ -1,7 +1,7 @@
 #ifndef TENSOR_H_INCLUDED
 #define TENSOR_H_INCLUDED
 
-#include "../util.cuh"
+#include <util.cuh>
 
 #include <cuda_runtime.h>
 #include <cstdlib>

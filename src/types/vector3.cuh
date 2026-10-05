@@ -1,7 +1,7 @@
 #ifndef VECTOR3_H_INCLUDED
 #define VECTOR3_H_INCLUDED
 
-#include "../util.cuh"
+#include <util.cuh>
 
 #include <cmath>
 

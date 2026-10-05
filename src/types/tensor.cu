@@ -1,7 +1,7 @@
-#include "tensor.cuh"
-#include "body.cuh"
-#include "vector3.cuh"
-#include "../util.cuh"
+#include <types/tensor.cuh>
+#include <types/body.cuh>
+#include <types/vector3.cuh>
+#include <util.cuh>
 
 #include <iostream>
 #include <algorithm>

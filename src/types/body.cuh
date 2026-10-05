@@ -1,8 +1,8 @@
 #ifndef BODY_H_INCLUDED
 #define BODY_H_INCLUDED
 
-#include "../util.cuh"
-#include "vector3.cuh"
+#include <util.cuh>
+#include <types/vector3.cuh>
 
 struct Body {
 
