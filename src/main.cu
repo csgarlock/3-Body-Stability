@@ -1,7 +1,6 @@
 #include <types/vector3.cuh>
 #include <types/body.cuh>
 #include <types/tensor.cuh>
-#include <helpers/pgm.h>
 #include <tests/n_body_test.cuh>
 #include <benchmarks/n_body_benchmark.cuh>
 
@@ -11,5 +10,5 @@
 
 
 int main() {
-    benchmark_n_body(1080*1920, 1000, 60.0f);
+    benchmark_n_body(1080*1920, 50000, 60.0f);
 }

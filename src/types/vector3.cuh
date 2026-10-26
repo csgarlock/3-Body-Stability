@@ -4,6 +4,7 @@
 #include <util.cuh>
 
 #include <cmath>
+#include <cstddef>
 
 struct Vector3 {
     
@@ -45,5 +46,10 @@ struct Vector3 {
     friend std::ostream& operator<<(std::ostream& os, const Vector3 vector);
     
 };
+
+static_assert(sizeof(float) == 4);
+static_assert(offsetof(Vector3, x) == 0);
+static_assert(offsetof(Vector3, y) == 4);
+static_assert(offsetof(Vector3, z) == 8);
 
 #endif

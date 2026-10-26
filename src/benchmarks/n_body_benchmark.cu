@@ -26,7 +26,7 @@ void benchmark_n_body(size_t count, int steps, float dt) {
 
     device_bodies.change_memory_location(MemoryLocation::Device);
     auto start = std::chrono::high_resolution_clock::now();
-    n_body_forward<<<76, 1024>>>(device_bodies.data, count, steps, dt);
+    n_body_forward<<<76*3, 512>>>(device_bodies.data, count, steps, dt);
     CUDA_CHECK(cudaDeviceSynchronize());
     auto end = std::chrono::high_resolution_clock::now();
     auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(end - start);
